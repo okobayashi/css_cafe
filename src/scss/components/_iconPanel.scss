@@ -1,0 +1,21 @@
+.IconPanel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__head {
+		padding: $space-unit;
+		font-size: 18px;
+		text-align: center;
+	}
+	&__body {
+		max-width: 100%;
+		padding: $space-unit*1.5;
+		line-height: 1.5;
+	}
+	&__icon {
+		margin-bottom: $space-unit;
+		padding: $sp-space-unit;
+		font-size: 26px;
+		color: $color-link;
+	}
+}
