@@ -1,0 +1,33 @@
+.sectionLabel {
+	display: flex;
+	flex: 1 1 auto;
+	align-items: center;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	color: $color-main-text;
+	text-transform: uppercase;
+	font-size: 22px;
+	line-height: 1;
+
+	@include menu-font;
+
+	&::before,
+	&::after {
+		content: '';
+		display: block;
+		flex: 1 0 10%;
+		height: 0;
+		border-bottom: 1px solid $color-main-text;
+	}
+	&::before {
+		margin-right: 20px;
+	}
+	&::after {
+		margin-left: 20px;
+	}
+}
+.logo {
+	text-transform: uppercase;
+	font-size: 26px;
+	@include menu-font;
+}
